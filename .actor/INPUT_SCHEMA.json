@@ -1,0 +1,32 @@
+{
+  "title": "BIGLEMON Japan Used Machinery Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "maxItems": {
+      "title": "最大取得件数",
+      "type": "integer",
+      "description": "取得する最大台数",
+      "default": 50,
+      "minimum": 1,
+      "editor": "number"
+    },
+    "categoryFilter": {
+      "title": "カテゴリで絞り込み",
+      "type": "string",
+      "description": "建設機械 or 運搬車両 or 農業機械 などで部分一致フィルタ。空欄=全件",
+      "prefill": "",
+      "editor": "textfield"
+    },
+    "proxyConfiguration": {
+      "title": "Proxy設定",
+      "type": "object",
+      "editor": "proxy",
+      "description": "Apifyプロキシ設定（自動）",
+      "default": {
+        "useApifyProxy": true
+      }
+    }
+  },
+  "required": []
+}
